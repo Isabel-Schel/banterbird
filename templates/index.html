@@ -12,7 +12,7 @@
 <body>
     <h1>Banterbird</h1>
     <div id = "account">
-        Logged in as: <strong >admin</strong>
+        Logged in as: <strong >Anonymus</strong>
     </div>
     <div>
         <h3>New Post</h3>
@@ -30,5 +30,9 @@
             <hr>
         </div>
     </template>
+    <script>
+        document.getElementById("account").innerText = 
+        localStorage.getItem("username")
+    </script>
 </body>
 </html>
